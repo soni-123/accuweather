@@ -55,7 +55,7 @@ public class BaseClass {
 		driver.get(baseUrl);
 		
 		
-		logger=Logger.getLogger("ebanking");
+		logger=Logger.getLogger("Openweather");
 		PropertyConfigurator.configure("Log4j.properties");
 	}	
 	@AfterClass

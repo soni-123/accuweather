@@ -1,5 +1,6 @@
 package com.openweather.pageObjects;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -20,10 +21,15 @@ public class HomePage {
 	 @CacheLookup 	
 	 WebElement searchBox;
 		
-		public void custName()
+		public void searchLocation(String loc) throws InterruptedException
 		{ 
+			searchBox.sendKeys(loc);
+			Thread.sleep(5000);
 			Actions act=new Actions(Idriver);
-			act.moveToElement(searchBox);
+			act.sendKeys(Keys.DOWN).perform();
+			act.sendKeys(Keys.ENTER).perform();
+			Thread.sleep(5000);
+			
 		}
 		
 
