@@ -10,3 +10,12 @@
 2021-12-01 18:36:19,405 [main] INFO Openweather - open URL
 2021-12-01 18:36:29,654 [main] INFO Openweather - Click the searchBox
 2021-12-01 18:36:29,658 [main] INFO Openweather - SearchBox test passed
+2021-12-02 11:00:07,815 [main] INFO Openweather - open URL
+2021-12-02 11:00:18,253 [main] INFO Openweather - Click the searchBox
+2021-12-02 11:00:18,261 [main] INFO Openweather - SearchBox test passed
+2021-12-02 13:45:24,216 [main] INFO Openweather - open URL
+2021-12-02 13:45:34,632 [main] INFO Openweather - Click the searchBox
+2021-12-02 13:45:34,670 [main] INFO Openweather - SearchBox test passed
+2021-12-02 16:33:34,758 [main] INFO Openweather - open URL
+2021-12-02 16:33:45,004 [main] INFO Openweather - Click the searchBox
+2021-12-02 16:33:45,051 [main] INFO Openweather - SearchBox test passed

@@ -20,6 +20,11 @@ public class HomePage {
 	 @FindBy(how=How.XPATH, using="//input[@class='search-input']") 
 	 @CacheLookup 	
 	 WebElement searchBox;
+	 
+	 @FindBy(how=How.XPATH, using="//a/div/div/div/div/div[@class='temp']") 
+	 @CacheLookup 	
+	 WebElement temp;
+	 
 		
 		public void searchLocation(String loc) throws InterruptedException
 		{ 
@@ -29,6 +34,13 @@ public class HomePage {
 			act.sendKeys(Keys.DOWN).perform();
 			act.sendKeys(Keys.ENTER).perform();
 			Thread.sleep(5000);
+			
+		}
+		
+		public String getTemp() {
+		
+			return	temp.getText();
+			
 			
 		}
 		

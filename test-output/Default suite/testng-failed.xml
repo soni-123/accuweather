@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.openweather.testCases.TC_HomeTest">
+      <class name="com.openweather.testCases.TC_GetTempratureFromUIAndAPI">
         <methods>
-          <include name="searchWeather"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="getTempratureFromUI"/>
         </methods>
-      </class> <!-- com.openweather.testCases.TC_HomeTest -->
+      </class> <!-- com.openweather.testCases.TC_GetTempratureFromUIAndAPI -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

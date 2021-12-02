@@ -4,13 +4,11 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.openweather.testCases.TC_HomeTest">
+      <class name="RestAPI.GetCurrentWeather">
         <methods>
-          <include name="searchWeather"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
+          <include name="getCurrentWeather"/>
         </methods>
-      </class> <!-- com.openweather.testCases.TC_HomeTest -->
+      </class> <!-- RestAPI.GetCurrentWeather -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [OpenWeather] -->

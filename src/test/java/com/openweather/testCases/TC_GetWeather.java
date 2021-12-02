@@ -7,19 +7,15 @@ import org.testng.annotations.Test;
 
 import com.openweather.pageObjects.HomePage;
 
-public class TC_HomeTest extends BaseClass {
+public class TC_GetWeather extends BaseClass {
 	@Test
 	public void searchWeather() throws IOException, InterruptedException
 	{
-		
-		
 		logger.info("open URL");
 		HomePage hp=new HomePage(driver);
-	hp.searchLocation("Patna");
-	logger.info("Click the searchBox");
-	
-	
-	if(driver.getTitle().equals("Patna, Bihar, India Today, Tonight & Tomorrow's Weather Forecast | AccuWeather")) 
+		hp.searchLocation("Patna");
+		logger.info("Click the searchBox");
+		if(driver.getTitle().equals("Patna, Bihar, India Today, Tonight & Tomorrow's Weather Forecast | AccuWeather")) 
 		{
 			Assert.assertTrue(true);
 			logger.info("SearchBox test passed");
@@ -29,7 +25,7 @@ public class TC_HomeTest extends BaseClass {
 			Assert.assertTrue(false);
 			logger.info("SearchBox test failed");
 		}
-			
+
 	}
-	
+
 }

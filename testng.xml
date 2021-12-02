@@ -4,9 +4,9 @@
 	<test thread-count="5" name="Test">
 	<parameter name="browser" value="firefox">
 		<classes>
-			<class name="com.openweather.testCases.TC_HomeTest" />
-			
-
+		<!--  	<class name="com.openweather.testCases.TC_HomeTest" />-->
+		<!--<class name="RestAPI.GetCurrentWeather" />-->
+			<class name="com.openweather.testCases.TC_GetTempratureFromUIAndAPI" />
 		</classes>
 		</parameter>
 	</test> <!-- Test -->
