@@ -35,7 +35,7 @@ public class Reporting extends TestListenerAdapter
 		extent.setSystemInfo("Environment","QA");
 		extent.setSystemInfo("user","Rohit");
 		
-		htmlReporter.config().setDocumentTitle("InetBanking Test Project");
+		htmlReporter.config().setDocumentTitle("OpenWeather Test Project");
 		htmlReporter.config().setReportName("Functional Test Report");
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
 		htmlReporter.config().setTheme(Theme.DARK);

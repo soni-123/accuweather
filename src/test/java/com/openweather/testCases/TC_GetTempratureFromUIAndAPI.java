@@ -5,12 +5,13 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
+import static org.testng.Assert.assertEquals;
 
 import com.openweather.pageObjects.HomePage;
 
 public class TC_GetTempratureFromUIAndAPI extends BaseClass {
-	String temprature;
-	float temp;
+	String temprature,temprature1;
+	String temp;
 	@Test
 	public void getTempratureFromUI() throws IOException, InterruptedException
 	{
@@ -44,5 +45,18 @@ public class TC_GetTempratureFromUIAndAPI extends BaseClass {
 		    	.extract().path("main.temp");
 				System.out.println("Temprature "+temp);
 	}
+	
+	@Test
+	public void compareTemprature() {
+		if(temprature==temp) {
+			System.out.println("Temprature Matched");
+		}
+		else {
+			System.out.println("Temprature not Matched");
+		}
+			
+	}
+	
+	
 
 }

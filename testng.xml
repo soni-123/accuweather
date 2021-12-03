@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="OpenWeather">
+<listeners>
+	<listener class-name="com.openweather.utilities.Reporting"/>
+</listeners>
 	<test thread-count="5" name="Test">
 	<parameter name="browser" value="firefox">
 		<classes>
-		<!--  	<class name="com.openweather.testCases.TC_HomeTest" />-->
-		<!--<class name="RestAPI.GetCurrentWeather" />-->
-			<class name="com.openweather.testCases.TC_GetTempratureFromUIAndAPI" />
+	       <class name="com.openweather.testCases.TC_GetWeather" />
+		   <class name="RestAPI.GetCurrentWeather" />
+	        <class name="com.openweather.testCases.TC_GetTempratureFromUIAndAPI" />
+	        <class name="com.openweather.testCases.TC_VarianceLogic" />
 		</classes>
 		</parameter>
 	</test> <!-- Test -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-02T11:03:15Z" name="OpenWeather" finished-at="2021-12-02T11:03:46Z" duration-ms="31489">
+  <suite started-at="2021-12-03T13:52:40 IST" name="OpenWeather" finished-at="2021-12-03T13:54:51 IST" duration-ms="130972">
     <groups>
     </groups>
-    <test started-at="2021-12-02T11:03:15Z" name="Test" finished-at="2021-12-02T11:03:46Z" duration-ms="31489">
+    <test started-at="2021-12-03T13:52:40 IST" name="Test" finished-at="2021-12-03T13:54:51 IST" duration-ms="130972">
       <class name="com.openweather.testCases.TC_GetTempratureFromUIAndAPI">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.openweather.testCases.TC_GetTempratureFromUIAndAPI@7e9131d5]" started-at="2021-12-02T11:03:15Z" name="setup" finished-at="2021-12-02T11:03:32Z" duration-ms="16805" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.openweather.testCases.TC_GetTempratureFromUIAndAPI@4310d43]" started-at="2021-12-03T13:53:21 IST" name="setup" finished-at="2021-12-03T13:53:38 IST" duration-ms="17248" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,71 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getTempratureFromAPI()[pri:0, instance:com.openweather.testCases.TC_GetTempratureFromUIAndAPI@7e9131d5]" started-at="2021-12-02T11:03:32Z" name="getTempratureFromAPI" finished-at="2021-12-02T11:03:34Z" duration-ms="2457" status="PASS">
+        <test-method signature="compareTemprature()[pri:0, instance:com.openweather.testCases.TC_GetTempratureFromUIAndAPI@4310d43]" started-at="2021-12-03T13:53:38 IST" name="compareTemprature" finished-at="2021-12-03T13:53:38 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareTemprature -->
+        <test-method signature="getTempratureFromAPI()[pri:0, instance:com.openweather.testCases.TC_GetTempratureFromUIAndAPI@4310d43]" started-at="2021-12-03T13:53:38 IST" name="getTempratureFromAPI" finished-at="2021-12-03T13:53:40 IST" duration-ms="1640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTempratureFromAPI -->
-        <test-method signature="getTempratureFromUI()[pri:0, instance:com.openweather.testCases.TC_GetTempratureFromUIAndAPI@7e9131d5]" started-at="2021-12-02T11:03:34Z" name="getTempratureFromUI" finished-at="2021-12-02T11:03:45Z" duration-ms="10296" status="PASS">
+        <test-method signature="getTempratureFromUI()[pri:0, instance:com.openweather.testCases.TC_GetTempratureFromUIAndAPI@4310d43]" started-at="2021-12-03T13:53:40 IST" name="getTempratureFromUI" finished-at="2021-12-03T13:53:50 IST" duration-ms="10219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTempratureFromUI -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweather.testCases.TC_GetTempratureFromUIAndAPI@7e9131d5]" started-at="2021-12-02T11:03:45Z" name="tearDown" finished-at="2021-12-02T11:03:46Z" duration-ms="1906" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweather.testCases.TC_GetTempratureFromUIAndAPI@4310d43]" started-at="2021-12-03T13:53:50 IST" name="tearDown" finished-at="2021-12-03T13:53:52 IST" duration-ms="2075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.openweather.testCases.TC_GetTempratureFromUIAndAPI -->
+      <class name="com.openweather.testCases.TC_GetWeather">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.openweather.testCases.TC_GetWeather@6253c26]" started-at="2021-12-03T13:52:40 IST" name="setup" finished-at="2021-12-03T13:53:05 IST" duration-ms="25072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchWeather()[pri:0, instance:com.openweather.testCases.TC_GetWeather@6253c26]" started-at="2021-12-03T13:53:05 IST" name="searchWeather" finished-at="2021-12-03T13:53:16 IST" duration-ms="10390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWeather -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweather.testCases.TC_GetWeather@6253c26]" started-at="2021-12-03T13:53:16 IST" name="tearDown" finished-at="2021-12-03T13:53:18 IST" duration-ms="1936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.openweather.testCases.TC_GetWeather -->
+      <class name="RestAPI.GetCurrentWeather">
+        <test-method signature="getCurrentWeather()[pri:0, instance:RestAPI.GetCurrentWeather@61001b64]" started-at="2021-12-03T13:53:18 IST" name="getCurrentWeather" finished-at="2021-12-03T13:53:21 IST" duration-ms="2977" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCurrentWeather -->
+      </class> <!-- RestAPI.GetCurrentWeather -->
+      <class name="com.openweather.testCases.TC_VarianceLogic">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.openweather.testCases.TC_VarianceLogic@54a7079e]" started-at="2021-12-03T13:53:52 IST" name="setup" finished-at="2021-12-03T13:54:05 IST" duration-ms="13106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="varianceLogic()[pri:0, instance:com.openweather.testCases.TC_VarianceLogic@54a7079e]" started-at="2021-12-03T13:54:05 IST" name="varianceLogic" finished-at="2021-12-03T13:54:50 IST" duration-ms="44926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- varianceLogic -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.openweather.testCases.TC_VarianceLogic@54a7079e]" started-at="2021-12-03T13:54:50 IST" name="tearDown" finished-at="2021-12-03T13:54:51 IST" duration-ms="1031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.openweather.testCases.TC_VarianceLogic -->
     </test> <!-- Test -->
   </suite> <!-- OpenWeather -->
 </testng-results>
