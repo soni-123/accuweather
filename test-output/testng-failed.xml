@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [OpenWeather]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.openweather.utilities.Reporting"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="10"/>
     <parameter name="browser" value="firefox"/>
+    <parameter name="browser_version" value="96"/>
     <classes>
+      <class name="com.openweather.testCases.TC_VarianceLogic">
+        <methods>
+          <include name="varianceLogic"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.openweather.testCases.TC_VarianceLogic -->
+      <class name="com.openweather.testCases.TC_GetWeather">
+        <methods>
+          <include name="searchWeather"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.openweather.testCases.TC_GetWeather -->
       <class name="com.openweather.testCases.TC_GetTempratureFromUIAndAPI">
         <methods>
+          <include name="getTempratureFromUI"/>
+          <include name="getTempratureFromAPI"/>
           <include name="tearDown"/>
           <include name="compareTemprature"/>
           <include name="setup"/>
